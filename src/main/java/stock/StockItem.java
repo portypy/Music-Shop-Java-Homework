@@ -10,4 +10,23 @@ public abstract class StockItem implements ISell {
         PurchasePrice = purchasePrice;
         this.retailPrice = retailPrice;
     }
+
+    public double getPurchasePrice() {
+        return PurchasePrice;
+    }
+
+    public double getRetailPrice() {
+        return retailPrice;
+    }
+
+    public void setPurchasePrice(double purchasePrice) {
+        PurchasePrice = purchasePrice;
+    }
+
+    public void setRetailPrice(double retailPrice) {
+        this.retailPrice = retailPrice;
+    }
+    public double calculateMarkup() {
+        return getRetailPrice() - getPurchasePrice();
+    }
 }
