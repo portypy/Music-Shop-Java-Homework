@@ -6,10 +6,11 @@ import stock.instuments.InstrumentType;
 import static org.junit.Assert.assertEquals;
 
 public class GuitarTest {
-    private Guitar guitar = new Guitar(10, 15, "wood", "red", InstrumentType.STRING,5);
+    Guitar guitar;
 
     @Before
     public void before() {
+        guitar = new Guitar(10, 15, "wood", "red", InstrumentType.STRING,5);
     }
 
     @Test
